@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main application component that manages video player state and renders the header, hero, video gallery, and footer sections with video selection functionality.",
+  "frontend/src/components/Header.tsx": "Sticky header component with cube logo, InfiniteSolvesCubes branding, navigation links, and subscribe button with Rubik's Cube themed styling using Box icon from lucide-react.",
+  "frontend/src/components/Hero.tsx": "Hero section featuring animated headline, InfiniteSolvesCubes channel description with mention of cubing memes and relatable moments, call-to-action buttons, channel statistics, and background image with gradient overlays.",
+  "frontend/src/components/VideoGallery.tsx": "Video gallery section that displays a grid of video cards with section header and background pattern.",
+  "frontend/src/components/VideoCard.tsx": "Interactive video card component with thumbnail, play button overlay, metadata, and smooth hover animations.",
+  "frontend/src/components/VideoPlayer.tsx": "Modal video player component that embeds YouTube videos with fullscreen overlay, close button, and keyboard navigation support.",
+  "frontend/src/components/Footer.tsx": "Footer component with InfiniteSolvesCubes branding, site navigation, social media links, and attribution including dynamic year and caffeine.ai link with UTM tracking using Box icon from lucide-react.",
+  "frontend/src/data/videos.ts": "Static video data containing sample Rubik's Cube tutorial information including titles, descriptions, thumbnails, and metadata.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks to interact with backend (currently empty as backend has no functionality).",
+  "frontend/src/index.css": "Global styles with Rubik's Cube inspired OKLCH color palette, custom animations (fade-in, slide-up, scale-in), and design tokens for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Rubik's Cube color tokens, custom font family, and enhanced design system settings.",
+  "frontend/index.html": "HTML entry point with page title set to \"InfiniteSolvesCubes - Rubik's Cube Channel\" and root div for React application."
+}

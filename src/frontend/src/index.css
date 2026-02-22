@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Rubik's Cube inspired color palette */
+        --cube-red: 0.55 0.22 25;
+        --cube-orange: 0.65 0.18 45;
+        --cube-yellow: 0.85 0.15 95;
+        --cube-green: 0.55 0.16 145;
+        --cube-blue: 0.50 0.20 250;
+        --cube-white: 0.98 0 0;
+        
+        /* Light mode */
+        --background: 1 0 0;
+        --foreground: 0.15 0 0;
+        --card: 0.99 0 0;
+        --card-foreground: 0.15 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0 0;
+        --primary: 0.50 0.20 250;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.96 0 0;
+        --secondary-foreground: 0.15 0 0;
+        --muted: 0.96 0 0;
+        --muted-foreground: 0.50 0 0;
+        --accent: 0.96 0 0;
+        --accent-foreground: 0.15 0 0;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.92 0 0;
+        --input: 0.92 0 0;
+        --ring: 0.50 0.20 250;
+        --chart-1: 0.55 0.22 25;
+        --chart-2: 0.50 0.20 250;
+        --chart-3: 0.55 0.16 145;
+        --chart-4: 0.65 0.18 45;
+        --chart-5: 0.85 0.15 95;
+    }
+
+    .dark {
+        --background: 0.12 0 0;
+        --foreground: 0.98 0 0;
+        --card: 0.15 0 0;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.15 0 0;
+        --popover-foreground: 0.98 0 0;
+        --primary: 0.60 0.22 250;
+        --primary-foreground: 0.12 0 0;
+        --secondary: 0.20 0 0;
+        --secondary-foreground: 0.98 0 0;
+        --muted: 0.20 0 0;
+        --muted-foreground: 0.65 0 0;
+        --accent: 0.25 0 0;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.60 0.24 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.25 0 0;
+        --input: 0.25 0 0;
+        --ring: 0.60 0.22 250;
+        --chart-1: 0.60 0.24 25;
+        --chart-2: 0.60 0.22 250;
+        --chart-3: 0.60 0.18 145;
+        --chart-4: 0.70 0.20 45;
+        --chart-5: 0.88 0.16 95;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    /* Custom animations */
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slide-up {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes scale-in {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    .animate-fade-in {
+        animation: fade-in 0.6s ease-out;
+    }
+    
+    .animate-slide-up {
+        animation: slide-up 0.6s ease-out;
+    }
+    
+    .animate-scale-in {
+        animation: scale-in 0.3s ease-out;
+    }
+    
+    .animation-delay-200 {
+        animation-delay: 0.2s;
+        animation-fill-mode: backwards;
+    }
+    
+    .animation-delay-400 {
+        animation-delay: 0.4s;
+        animation-fill-mode: backwards;
+    }
+    
+    .animation-delay-600 {
+        animation-delay: 0.6s;
+        animation-fill-mode: backwards;
+    }
+}

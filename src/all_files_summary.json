@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no functionality implemented.",
+  "feature_evidence.json": "Feature evidence report documenting the update to Hero component description text to mention cubing memes and relatable moments, with high confidence.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend source files describing components, data, hooks, and configuration for the InfiniteSolvesCubes React application.",
+  "frontend/index.css": "Tailwind CSS configuration with OKLCH color system defining light and dark mode design tokens for a Rubik's Cube themed application.",
+  "frontend/index.html": "HTML entry point with title \"InfiniteSolvesCubes - Rubik's Cube Channel\" and root div for React mounting.",
+  "frontend/src/App.tsx": "Main React component managing video player state and rendering Header, Hero, VideoGallery, Footer, and VideoPlayer components.",
+  "frontend/src/components/Footer.tsx": "Footer component with branding, navigation links, social media icons, and attribution including caffeine.ai link with UTM tracking.",
+  "frontend/src/components/Header.tsx": "Sticky header with cube logo, InfiniteSolvesCubes branding, navigation links, and subscribe button with Rubik's Cube gradient styling.",
+  "frontend/src/components/Hero.tsx": "Hero section with animated headline, channel description mentioning cubing memes and relatable moments, CTA buttons, statistics, and gradient background.",
+  "frontend/src/components/VideoCard.tsx": "Interactive video card component displaying thumbnail, play button overlay, metadata, category badge, and hover animations.",
+  "frontend/src/components/VideoGallery.tsx": "Video gallery section rendering a grid of VideoCard components with section header and background pattern.",
+  "frontend/src/components/VideoPlayer.tsx": "Modal video player component embedding YouTube videos with fullscreen overlay, close button, and keyboard escape support.",
+  "frontend/src/data/videos.ts": "Defines the Video interface and exports a hardcoded array of 6 sample Rubik's Cube tutorial videos with metadata like title, description, thumbnail, duration, views, and category.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an ICP backend actor using React Query, handling both authenticated and anonymous actors based on Internet Identity state, and invalidates dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides React context and hooks for Internet Identity authentication on ICP, managing login state, identity persistence, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks to interact with the backend; currently empty with a note that backend integration hooks should be added here.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom Rubik's Cube-inspired color palette (red, orange, yellow, green, blue, white), light/dark mode theme variables using OKLCH color space, and custom animations (fade-in, slide-up, scale-in).",
+  "frontend/src/main.tsx": "Application entry point that renders the root React component wrapped with QueryClientProvider for React Query and InternetIdentityProvider for ICP authentication.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom colors using OKLCH format (including Rubik's Cube colors), container settings, border radius variables, custom animations, and typography/container-queries/animate plugins.",
+  "project_state.json": "Project state tracking document for an InfiniteSolvesCubes YouTube channel website, listing implemented features (homepage, video display, interactive UI, modern design, branding updates) and pending feature requests for enhanced styling and interactivity."
+}
